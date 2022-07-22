@@ -1,0 +1,258 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    display: block;
+    background: #2a2a2a;
+}
+
+a{
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #D9D9D9;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #404040;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #5F5DBE;
+}
+
+nav{
+    width: 100%;
+    height: 65px;
+    background: #5F5DBE;
+    border-bottom: 5px solid #000000;
+    box-shadow: 0 0 15px 1px #000;
+    z-index: 1000;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 65px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    border-radius: 15px;
+    padding:4px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+nav a.active{
+    background: #7c7bdc;
+    transition: .4s;
+}
+
+nav a:hover{
+    border-bottom: 5px solid;
+    transition: .4s;
+}
+
+.checkbtn{
+    font-size: 50px;
+    color:white;
+    float: right;
+    line-height: 65px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.nome{
+    font-weight: 800;
+    font-size: 25px;
+    color:white;
+    line-height: 65px;
+    padding: 0 4vw;
+}
+/* ============================================================================================================================================ */
+
+.top{
+    padding-top: 4vh;
+    margin-bottom: 4vh;
+    display: flex;
+    align-items: center;
+}
+
+.goto{
+    top: 0;
+    position: sticky;
+    width: 100%;
+    display: flex;
+}
+
+.goto a{
+    margin-right: 4vw;
+    color: #fff;
+    font-weight: 500;
+    border: 3px solid #5F5DBE;
+    background: #404040;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.text h1{
+    color: #fff;
+}
+
+.btn{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.setas{
+    border-radius: 20px;
+    border: 5px solid #000;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #5F5DBE;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+img{
+    width: 100%;
+}
+
+/* ============================================================================================================================================ */
+
+
+
+footer{
+    bottom: 0;
+    border-top: 5px solid #000 ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: fit-content;
+    background-color: #404040;
+}
+
+.meunome{
+    color: #fff;
+    line-height: 65px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 20px;
+    background: linear-gradient(0deg, #5F5DBE, #5F5DBE) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 100%;
+}
+
+.meunome:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+}
+
+span{
+    color: #fff;
+    text-shadow: 1px 3px 15px #5F5DBE;
+}
+
+
+@media(min-width:1000px){
+    .top{
+        padding-left: 30vw;
+        padding-right: 30vw;
+    }
+    .goto a{
+        margin-right: 36vw;
+    }
+    .pag{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    img{
+        align-self: center;
+        width: 80%;
+    }
+    #wt img{
+        width: 50%;
+    }
+}
+
+@media(max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        padding-left: 0;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(74, 72, 145, 0.35);
+        backdrop-filter: blur(8px);
+        left:-110%;
+        text-align: center;
+        transition: all .5s;
+        border-right: 5px solid #000;
+    }
+    nav ul li{
+        padding-top: 40px;
+        display: block;
+    }
+
+    nav ul li a{
+        margin-right:0px;
+        font-size: 30px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    nav a.active,nav a:hover{
+        background: none;
+        border-bottom: 5px solid;
+    }
+}
+
+@media(max-width:900px){
+    footer{
+        grid-template-columns: 1fr;
+    }
+    footer p.meunome{
+        border-top: 5px dashed #fff;
+        border-radius: 0;
+    }
+}

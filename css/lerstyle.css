@@ -1,0 +1,286 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #D9D9D9;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #404040;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #5F5DBE;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    background: #5F5DBE;
+    border-bottom: 5px solid #000000;
+    box-shadow: 0 0 15px 1px #000;
+    z-index: 1000;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 65px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    border-radius: 15px;
+    padding:4px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+nav a.active{
+    background: #7c7bdc;
+    transition: .4s;
+}
+
+nav a:hover{
+    border-bottom: 5px solid;
+    transition: .4s;
+}
+
+.checkbtn{
+    font-size: 50px;
+    color:white;
+    float: right;
+    line-height: 65px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.nome{
+    font-weight: 800;
+    font-size: 25px;
+    color:white;
+    line-height: 65px;
+    padding: 0 4vw;
+}
+/* ============================================================================================================================================ */
+
+.bg{
+    width: 100%;
+    max-height: 30vh;
+    padding-top: 65px;
+    padding-bottom: 30vh;
+    border-bottom: 5px solid #5F5DBE;
+    box-shadow: 1px 2px 14px #8786C1;
+    background-size: cover;
+    background-image: url(../images/japan-3840x2160-scenery-oriental-4k-5k-18609.jpg);
+}
+
+.info{
+    margin-left: 0;
+    display: flex;
+    justify-content: baseline;
+    align-items:initial
+}
+
+.logods{
+    grid-row: 1;
+    margin-top: -20vh;
+    margin-left: 5vw;
+    margin-right: 0;
+    max-height: 40vw;
+    filter: drop-shadow(18px 22px 17px rgba(0, 0, 0, 0.02)) drop-shadow(8px 10px 13px rgba(0, 0, 0, 0.03)) drop-shadow(2px 2px 7px rgba(0, 0, 0, 0.03)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.03));
+}
+
+.mangaimg{
+    margin: 0;
+}
+
+.title{
+    margin-top: 2vh;
+    width: fit-content;
+    height: fit-content;  
+    margin-left: 5vw; 
+}
+
+.titulomanga{
+    margin-left: 0;
+    width: fit-content;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 40px;
+    color: #fff;
+    background: #5F5DBE;
+    box-shadow: 1px 2px 14px #8786C1;
+}
+
+.generos{
+    margin-top: 1.3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+}
+
+.gen{
+    margin-left: 0;
+    margin-right: 1vw;
+    color: #fff;
+    width: fit-content;
+    font-size: 20px;
+    padding: 5px;
+    background-color: #404040;
+}
+
+.chapter_area{
+    width: 100%;
+    height:80vh;
+}
+
+.bgcinza{
+    border: 5px solid #5F5DBE;
+    border-bottom: 0;
+    display: flex;
+    margin: 5vw;
+    border-radius: 25px 25px 0 0;
+    height: 100%;
+    background: #D9D9D9;
+    box-shadow: 1px 2px 14px #8786C1;
+}
+
+.erro{
+    color: #404040;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* ============================================================================================================================================ */
+
+
+footer{
+    bottom: 0;
+    border-top: 5px solid #000 ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: fit-content;
+    background-color: #404040;
+}
+
+.meunome{
+    color: #fff;
+    line-height: 65px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 20px;
+    background: linear-gradient(0deg, #5F5DBE, #5F5DBE) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 100%;
+}
+
+.meunome:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+}
+
+span{
+    color: #fff;
+    text-shadow: 1px 3px 15px #5F5DBE;
+}
+
+@media(max-width:782px){
+    .info{
+        display: block;
+    }
+    .logods{
+        margin-top: -18vh;
+        max-height: 50vw;
+    }
+    .bg{
+        padding-bottom: 23vh;
+    }
+    .title{
+        margin-top: 0;
+    }
+    .titulomanga{
+        font-size: 35px;
+    }
+    .gen{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        padding-left: 0;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(74, 72, 145, 0.35);
+        backdrop-filter: blur(8px);
+        left:-110%;
+        text-align: center;
+        transition: all .5s;
+        border-right: 5px solid #000;
+    }
+    nav ul li{
+        padding-top: 40px;
+        display: block;
+    }
+
+    nav ul li a{
+        margin-right:0px;
+        font-size: 30px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    nav a.active,nav a:hover{
+        background: none;
+        border-bottom: 5px solid;
+    }
+}
+
+@media(max-width:900px){
+    footer{
+        grid-template-columns: 1fr;
+    }
+    footer p.meunome{
+        border-top: 5px dashed #fff;
+        border-radius: 0;
+    }
+}

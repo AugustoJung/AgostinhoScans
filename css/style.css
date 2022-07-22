@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #D9D9D9;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #404040;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #5F5DBE;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    background: #5F5DBE;
+    border-bottom: 5px solid #000000;
+    box-shadow: 0 0 15px 1px #000;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 65px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    border-radius: 15px;
+    padding:4px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+nav a.active{
+    background: #7c7bdc;
+    transition: .4s;
+}
+
+nav a:hover{
+    border-bottom: 5px solid;
+    transition: .4s;
+}
+
+.checkbtn{
+    font-size: 50px;
+    color:white;
+    float: right;
+    line-height: 65px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.nome{
+    font-weight: 800;
+    font-size: 25px;
+    color:white;
+    line-height: 65px;
+    padding: 0 4vw;
+}
+
+.hero-container{
+    display: flex;
+    width: 100%;
+    height: 29.5vh;
+    background-size:cover;
+    background-image: url(../images/japan-3840x2160-scenery-oriental-4k-5k-18609.jpg);
+}
+
+.tanjiro{
+    height: 29.5vh ;
+    float: bottom;
+}
+
+.logodemon{
+    align-self: center;
+    height: 25vh;
+}
+
+.hero{
+    padding-top: 65px;
+}
+
+.under{
+    max-width: 3840px;
+    height: 65px;
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+    background-color: #5F5DBE;
+    box-shadow: 0 0 15px 1px #000;
+}
+
+.manganame{
+    margin-top: 15px ;
+    width: 300px;
+    float: left;
+}
+
+.manganame h1{
+    width: 250px;
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 1vw;
+    align-self: center;
+}
+
+.leragora{
+    display: flex;
+    margin-top: 40px;
+    float: right;
+    background: #D9D9D9;
+    border: 5px solid #000000;
+    border-radius: 20px;
+    margin-right: 40px;
+    width: 200px ;
+    height: 45px;
+    box-shadow: 0 0 15px 1px #000;
+}
+
+.leragora a{
+    color: #000;
+    cursor: pointer;
+    align-self: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+.leragora a:hover{
+    color: #5F5DBE;
+}
+
+.mangas{
+    margin-top: 40px;
+    border-top: 8px dashed #5F5DBE;
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+.quad{
+    max-width: 3840px;
+    height:50px;
+}
+
+.quadradomanga{
+    margin-left: 60px;
+    float: left;
+    display: grid;
+    width: 200px;
+    height: 50px;
+    background: #5F5DBE;
+    border: 5px solid #000000;
+    border-radius: 25px;    
+}
+
+.quadradomanga h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color:#fff;
+    align-self: center;
+}
+
+.destaques{
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 50vw;
+}
+
+.manga{
+    margin-left: 0;
+}
+
+.manga2{
+    margin-left: 0;
+    margin-top: 15px;
+}
+
+.bgtop{
+    display: flex;
+    margin-left: 0;
+    height: 150px;
+    width: 50vw;
+    background: #d9d9d9;
+    border-radius: 15px 15px 0px 0px;
+    flex-direction: row;
+    align-items:center;
+}
+
+.barbottom{
+    display: flex;
+    background: #404040;
+    height: 50px;
+    min-width: 50vw;
+    max-width: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgdomanga{
+    border-radius: 15px;
+    border:5px solid #000;
+    bottom: 0;
+    float: left;
+    height: 130px;
+    margin-left: 6px;
+    margin-right: 0px;
+}
+
+.titulodomanga{
+    font-family: 'Montserrat',;
+    color: #5F5DBE;
+    font-weight: 800;
+    font-size: 30px;
+    margin-left: 25px;
+}
+
+.capitulos{
+    margin-left: 15px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 0px;
+}
+
+.bott{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #000;
+    border-radius: 15px;
+    width: 70px;
+    height: 30px;
+    background: #d9d9d9;
+    margin-left: 45px;
+}
+
+.botaomanga{
+    font-size: 20px;
+    font-weight: 700;
+    color:#000;
+    text-decoration: none;
+}
+
+.botaomanga{
+    border-radius: 7px;
+    background: linear-gradient(0deg, #5F5DBE, #5F5DBE) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 100%;
+}
+
+.botaomanga:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+}
+
+.sidebar2{
+    float: right;
+    width: 40vw;
+    margin-left: 4vw;
+    height: fit-content;
+}
+
+.sidebartitle{
+    color: #fff;
+}
+
+.bgcinza{
+    border: 5px solid #000000;
+    border-top: 0px solid #000;
+    float: right;
+    border-radius: 0px 0px 20px 20px;
+    width: 100%;
+    height: 98.5%;
+    background-color: #D9D9D9;
+}
+
+.sidetop{
+    border: 5px solid #000000;
+    border-bottom: 0px;
+    display: flex;
+    float: right;
+    background-color: #5F5DBE;
+    border-radius: 20px 20px 0px 0px;
+    height: 39px;
+    width: 100%;
+}
+
+.tops{
+    width: 100%;
+    display: flex;
+    border-bottom: 7px dashed #5F5DBE;
+    align-items: center;
+}
+
+#tops-border{
+    border-bottom: 0;
+}
+
+.sideimg{
+    margin: 15px;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border:5px solid #000;
+}
+
+.text{
+    margin-left: 15px;
+    display: block;
+    float: left;
+}
+
+.sidetext{
+    cursor: pointer;
+    font-size: 25px;
+    color: #5F5DBE;
+    font-weight: 700;
+}
+
+.sidenum{
+    float:left;
+    width: 95px;
+    border: 5px solid #000;
+    border-radius: 15px;
+    text-align: center;
+    background: #5F5DBE;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 33px;
+}
+
+/* ============================================================================================================================================ */
+
+footer{
+    bottom: 0;
+    border-top: 5px solid #000 ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items:center;
+    height: fit-content;
+    min-width: 100%;
+    background-color: #404040;
+}
+
+.meunome{
+    color: #fff;
+    line-height: 65px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 20px;
+    background: linear-gradient(0deg, #5F5DBE, #5F5DBE) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 100%;
+}
+
+.meunome:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+}
+
+span{
+    color: #fff;
+    text-shadow: 1px 3px 15px #5F5DBE;
+}
+
+
+@media(max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        padding-left: 0;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(74, 72, 145, 0.35);
+        backdrop-filter: blur(8px);
+        left:-110%;
+        text-align: center;
+        transition: all .5s;
+        border-right: 5px solid #000;
+    }
+    nav ul li{
+        padding-top: 40px;
+        display: block;
+    }
+
+    nav ul li a{
+        margin-right:0px;
+        font-size: 30px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    nav a.active,nav a:hover{
+        background: none;
+        border-bottom: 5px solid;
+    }
+}
+
+@media(max-width:900px){
+    .logodemon{
+        display: none;
+    }
+    footer{
+        grid-template-columns: 1fr;
+    }
+    footer p.meunome{
+        border-top: 5px dashed #fff;
+        border-radius: 0;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .bgtop{
+        width: 90vw;
+    }
+    .barbottom{
+        width: 100%;
+    }
+    .destaques{
+        max-width: 50vw;
+        grid-template-columns: 1fr;
+    }
+    .sidebar2{
+        margin-top: 2vh;
+        margin-left: 1vw;
+
+        width: 90vw;
+    }
+}
+@media only screen and (max-width:556px){
+    .manganame{
+        margin-top: 5px;
+        margin-left: 15px;
+        width: 100px;
+    }
+    .leragora{
+        width: 150px;
+        margin-right: 15px;
+    }
+    .quadradomanga{
+        margin-left: 25px;
+    }
+    .destaques{
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .manga{
+        margin-top: 10px;
+    }
+    .titulodomanga{
+        margin-left: 10px;
+    }
+}
